@@ -30,7 +30,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-playfair font-bold mb-6">
-            À Propos de <span className="text-gradient">Moi</span>
+            <span className="text-gradient">À Propos</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Un parcours unique façonné par la passion, la détermination et l'amour du football
@@ -40,22 +40,12 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           {/* Story Content */}
           <div className="animate-slide-up">
-            <h3 className="text-2xl font-playfair font-semibold mb-6">Mon Histoire</h3>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Je suis N'Guessan Yohou Michael, un jeune footballeur passionné de Côte d'Ivoire. 
-                Mon parcours dans le football a commencé très tôt, avec des rêves plein la tête 
-                et une détermination sans faille.
+                Je m'appelle <em>Mickael Yohou</em>, né le <strong>10 mai 2007</strong> à <em>Guibéroua</em>, une petite ville paisible de Côte d'Ivoire. Le <strong>football</strong>, pour moi, n'est pas un simple jeu. C'est une passion qui me fait vibrer depuis que j'ai appris à courir. Quand je suis sur le terrain, je me sens libre, vivant, et en parfaite harmonie avec moi-même. Chaque ballon touché, chaque course, chaque but me rapproche un peu plus de <strong>qui je suis vraiment</strong>.
               </p>
               <p>
-                Aujourd'hui, j'évolue dans une académie de football où je perfectionne mes 
-                compétences chaque jour. Mon objectif n'est pas seulement de réussir 
-                personnellement, mais aussi d'inspirer d'autres jeunes à croire en leurs rêves.
-              </p>
-              <p>
-                Ce site web est bien plus qu'une vitrine : c'est un témoignage de résilience, 
-                de persévérance et de foi en l'avenir. Chaque challenge que j'ai surmonté 
-                m'a rendu plus fort et plus déterminé à atteindre mes objectifs.
+                J'aime ce sport parce qu'il me donne une <em>force intérieure</em>, me pousse à me surpasser, à ne jamais abandonner. Il m'apprend le respect, la discipline, l'humilité, et surtout, l'esprit d'équipe. Le football est devenu <strong>mon langage, ma thérapie, mon rêve en mouvement</strong>.
               </p>
             </div>
           </div>
