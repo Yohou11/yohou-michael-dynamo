@@ -63,6 +63,25 @@ const AboutSection = () => {
           </div>
         </div>
 
+        {/* Mon Histoire Section */}
+        <div className="mb-20 animate-fade-in">
+          <h3 className="text-3xl font-playfair font-semibold mb-8 text-center">Mon Histoire</h3>
+          <div className="max-w-4xl mx-auto space-y-6 text-muted-foreground leading-relaxed">
+            <p>
+              Je suis né et j'ai grandi avec <em>ma grand-mère</em>, cette femme forte qui m'a toujours soutenu et encouragé. À <strong>10 ans</strong>, elle a décidé de m'envoyer vivre chez mon grand-père dans un petit village. J'étais encore un enfant, mais c'est là-bas que ma vie a pris un tournant.
+            </p>
+            <p>
+              Un jour, à l'école, j'ai entendu parler de l'équipe de football qui se préparait pour un tournoi de l'<em>OISSU</em>. Il leur manquait un <strong>attaquant</strong>. J'ai levé la main, sans savoir si j'étais prêt, mais avec une <strong>conviction brûlante</strong> dans le cœur. J'ai été sélectionné dans l'équipe A – celle des plus grands. <em>C'était mon premier vrai match. Mon premier rêve éveillé.</em>
+            </p>
+            <p>
+              En <em>2017</em>, nous avons été <strong>sacrés champions</strong>, et j'ai reçu le <strong>prix de meilleur joueur du tournoi</strong>. Ce jour-là, j'ai compris que ce sport était plus qu'un loisir. C'était ma <strong>voie</strong>.
+            </p>
+            <p>
+              Malgré les obstacles, malgré un premier refus de mon père face à une opportunité avec des recruteurs (parce que je devais passer un examen), je n'ai jamais baissé les bras. J'ai continué à m'entraîner, à croire en moi, à rêver plus fort.
+            </p>
+          </div>
+        </div>
+
         {/* Values Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((value, index) => (
