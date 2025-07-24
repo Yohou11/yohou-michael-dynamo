@@ -54,75 +54,30 @@ const InspirationSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-playfair font-bold mb-6">
-            Sources d'<span className="text-gradient">Inspiration</span>
+            <span className="text-gradient">Et maintenant ?</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Des pensées, des réflexions et des messages pour motiver et inspirer
+        </div>
+
+        {/* Main Content */}
+        <div className="max-w-4xl mx-auto space-y-8 text-muted-foreground leading-relaxed animate-fade-in">
+          <p className="text-lg">
+            Mon rêve, c'est de jouer un jour dans un grand club, notamment <em>Manchester City</em>, dont je partage les valeurs. Je m'inspire de <strong>Phil Foden</strong> pour son courage, sa simplicité et son fair-play. Comme lui, je crois qu'on peut briller sans trahir qui l'on est.
+          </p>
+          
+          <p className="text-lg">
+            Je suis <em>prêt à tout donner</em>. Parce que le football, ce n'est pas juste ce que je fais. <strong>C'est ce que je suis.</strong>
           </p>
         </div>
 
-        {/* Inspirational Quotes */}
-        <div className="mb-20">
-          <h3 className="text-2xl font-playfair font-semibold text-center mb-12">Mes Réflexions</h3>
-          <div className="grid lg:grid-cols-3 gap-8">
-            {inspirationalQuotes.map((quote, index) => (
-              <Card 
-                key={index}
-                className="card-elegant animate-slide-up"
-                style={{animationDelay: `${index * 0.2}s`}}
-              >
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-4 mb-4">
-                    <Quote className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <Badge variant="secondary" className="mb-3">
-                        {quote.category}
-                      </Badge>
-                    </div>
-                  </div>
-                  <blockquote className="text-lg italic text-slate-light mb-4 leading-relaxed">
-                    "{quote.text}"
-                  </blockquote>
-                  <cite className="text-primary font-medium">— {quote.author}</cite>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* Motivational Thoughts */}
-        <div className="mb-20">
-          <h3 className="text-2xl font-playfair font-semibold text-center mb-12">Messages de Motivation</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {motivationalThoughts.map((thought, index) => (
-              <Card 
-                key={index}
-                className="relative overflow-hidden animate-fade-in group"
-                style={{animationDelay: `${index * 0.1}s`}}
-              >
-                <div className={`absolute inset-0 bg-gradient-to-br ${thought.color} opacity-5 group-hover:opacity-10 transition-smooth`}></div>
-                <CardContent className="p-6 relative z-10">
-                  <div className={`w-12 h-12 bg-gradient-to-r ${thought.color} rounded-xl flex items-center justify-center mb-4`}>
-                    <thought.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <h4 className="text-lg font-playfair font-semibold mb-3">{thought.title}</h4>
-                  <p className="text-muted-foreground leading-relaxed">{thought.message}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
         {/* Call to Action */}
-        <div className="text-center animate-slide-up">
-          <Card className="card-elegant max-w-4xl mx-auto">
-            <CardContent className="p-8 lg:p-12">
+        <div className="mt-16 text-center animate-slide-up">
+          <Card className="card-elegant max-w-2xl mx-auto">
+            <CardContent className="p-8">
               <div className="mb-6">
                 <Heart className="w-12 h-12 text-primary mx-auto mb-4" />
-                <h3 className="text-3xl font-playfair font-bold mb-4">{callToAction.title}</h3>
-                <p className="text-xl text-primary mb-6">{callToAction.subtitle}</p>
-                <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
-                  {callToAction.description}
+                <h3 className="text-2xl font-playfair font-bold mb-4">Rejoignez-moi dans cette aventure</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Suivez mon parcours et partageons ensemble cette passion pour le football
                 </p>
               </div>
               
@@ -144,28 +99,6 @@ const InspirationSection = () => {
               </div>
             </CardContent>
           </Card>
-        </div>
-
-        {/* Achievement Highlight */}
-        <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            { icon: Target, title: "Objectifs", subtitle: "Toujours plus hauts" },
-            { icon: Heart, title: "Passion", subtitle: "Sans limites" },
-            { icon: Lightbulb, title: "Innovation", subtitle: "Esprit créatif" },
-            { icon: Quote, title: "Inspiration", subtitle: "Pour tous" }
-          ].map((item, index) => (
-            <div 
-              key={item.title}
-              className="text-center group animate-fade-in"
-              style={{animationDelay: `${index * 0.1}s`}}
-            >
-              <div className="w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-smooth">
-                <item.icon className="w-8 h-8 text-primary-foreground" />
-              </div>
-              <h4 className="font-playfair font-semibold mb-1">{item.title}</h4>
-              <p className="text-muted-foreground text-sm">{item.subtitle}</p>
-            </div>
-          ))}
         </div>
       </div>
     </section>
