@@ -50,10 +50,10 @@ const GallerySection = () => {
     },
     {
       id: 6,
-      type: "placeholder",
-      src: "photo-1486312338219-ce68d2c6f44d",
-      title: "Technologie",
-      description: "L'ère numérique du football moderne",
+      type: "image",
+      src: "/lovable-uploads/c8b392da-b3c0-43c5-bbec-4cf50faa94fc.png",
+      title: "Présentation Officielle",
+      description: "En tenue officielle - Prêt pour les défis",
       category: "lifestyle"
     }
   ];
