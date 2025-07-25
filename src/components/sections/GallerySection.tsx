@@ -26,26 +26,26 @@ const GallerySection = () => {
     },
     {
       id: 3,
-      type: "placeholder",
-      src: "photo-1470813740244-df37b8c1edcb",
-      title: "Ciel Étoilé",
-      description: "Inspiration et ambitions sous les étoiles",
+      type: "image",
+      src: "/lovable-uploads/fc4c3e46-e759-428c-9b61-fa20aac9f7f2.png",
+      title: "Hydratation",
+      description: "Prendre soin de son corps sur le terrain",
       category: "inspiration"
     },
     {
       id: 4,
-      type: "placeholder",
-      src: "photo-1581090464777-f3220bbe1b8b",
-      title: "Innovation",
-      description: "Toujours à la recherche de nouvelles idées",
+      type: "image",
+      src: "/lovable-uploads/99ab0cbb-2029-4735-aea7-e03a7a9cfc3b.png",
+      title: "Équipe Akwaaba",
+      description: "Moments de complicité avec les coéquipiers",
       category: "inspiration"
     },
     {
       id: 5,
-      type: "placeholder",
-      src: "photo-1615729947596-a598e5de0ab3",
-      title: "Le Chemin",
-      description: "Le parcours vers l'excellence",
+      type: "image",
+      src: "/lovable-uploads/fdfe602c-1219-4c24-993c-5fa0a49e541e.png",
+      title: "Esprit d'équipe",
+      description: "Athlético Club de Guibéroua - Unis pour la victoire",
       category: "inspiration"
     },
     {
